@@ -5,10 +5,10 @@ export const ROUTES: RouteInfo[] = [
         path: '', title: 'Tienda Asociada 1', icon: '', class: 'nav-small-cap', label: '', labelClass: '', extralink: true, submenu: []
     },
     {
-        path: '/', title: 'Inicio', icon: '', class: 'nav-small-cap', label: '', labelClass: '', extralink: false, submenu: []
+        path: '/inicio', title: 'Inicio', icon: 'mdi mdi-gauge', class: 'nav-small-cap', label: '', labelClass: '', extralink: false, submenu: []
     },
     {
-        path: '/', title: 'Pedido', icon: '', class: 'has-arrow', label:'', labelClass: '', extralink: false, 
+        path: '', title: 'Pedido', icon: '', class: 'has-arrow', label:'', labelClass: '', extralink: false, 
         submenu: [
             { path: '/pedido/ingresados', title: 'Ingresados', icon:'', class: '', label:'2', labelClass: 'label label-rouded label-themecolor pull-right', extralink: false, submenu: [] },
             { path: '/pedido/olvidados', title: 'Olvidados', icon:'', class: '', label:'1', labelClass: 'label label-rouded label-themecolor pull-right', extralink: false, submenu: [] },
@@ -16,7 +16,7 @@ export const ROUTES: RouteInfo[] = [
         ]
     },
     {
-        path: '/', title: 'Informes', icon: '', class: 'has-arrow', label:'', labelClass: '', extralink: false, 
+        path: '', title: 'Informes', icon: '', class: 'has-arrow', label:'', labelClass: '', extralink: false, 
         submenu: [
             { path: '/informes/estadistica', title: 'Estadística', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] },
             { path: '/informes/reportes-venta', title: 'Reportes de Venta', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] },
@@ -24,7 +24,7 @@ export const ROUTES: RouteInfo[] = [
         ]
     },
     {
-        path: '/', title: 'Artículos', icon: '', class: 'has-arrow', label:'', labelClass: '', extralink: false, 
+        path: '', title: 'Artículos', icon: '', class: 'has-arrow', label:'', labelClass: '', extralink: false, 
         submenu: [
             { path: '/articulos/crear-item', title: 'Crear Ítem', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] },
             { path: '/articulos/crear-categoria', title: 'Crear Categoría', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] },
@@ -33,7 +33,7 @@ export const ROUTES: RouteInfo[] = [
         ]
     },
     {
-        path: '/', title: 'Valoraciones', icon: '', class: 'has-arrow', label:'', labelClass: '', extralink: false, 
+        path: '', title: 'Valoraciones', icon: '', class: 'has-arrow', label:'', labelClass: '', extralink: false, 
         submenu: [
             { path: '/valoraciones/calificaciones', title: 'Calificaciones', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] },
             { path: '/valoraciones/comentarios-sugerencias', title: 'Comentarios y Sugerencias', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] }          

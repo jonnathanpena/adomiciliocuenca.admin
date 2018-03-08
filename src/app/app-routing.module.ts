@@ -10,7 +10,8 @@ export const routes: Routes = [
     path: '',
     component: FullComponent,
     children: [
-        { path: '', redirectTo: '/dashboard/dashboard1', pathMatch: 'full' },
+        { path: '', redirectTo: '/dashboard/dashboard1', pathMatch: 'full' },        
+        { path: 'inicio', loadChildren: './inicio/inicio.module#InicioModule'},
         { path: 'dashboard', loadChildren: './dashboards/dashboard.module#DashboardModule' },
         { path: 'starter', loadChildren: './starter/starter.module#StarterModule' },
         { path: 'component', loadChildren: './component/component.module#ComponentsModule' },

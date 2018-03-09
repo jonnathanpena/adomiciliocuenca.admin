@@ -4,6 +4,11 @@ import { InicioComponent } from './inicio.component';
 
 export const InicioRoutes: Routes = [
   {
-    path: 'inicio'
+    path: '',
+    data: {
+          title: 'Inicio',
+          urls: [{title: 'Inicio',url: '/inicio'},{title: 'Inicio'}]
+      },
+    component: InicioComponent
   }
 ];

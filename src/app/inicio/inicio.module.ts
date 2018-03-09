@@ -50,7 +50,8 @@ import { ActivityComponent } from '../dashboards/dashboard-components/activity-t
         TotalEarningComponent,
         FeedsComponent,
         EarningComponent,
-        ActivityComponent
+        ActivityComponent,
+        InicioComponent
     ]
 })
 export class InicioModule { }

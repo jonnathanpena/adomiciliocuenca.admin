@@ -6,11 +6,12 @@ import { FullComponent } from './layouts/full/full.component';
 import { BlankComponent } from './layouts/blank/blank.component';
 
 export const routes: Routes = [
+{ path: '', redirectTo: '/authentication/login', pathMatch: 'full' },
 {
     path: '',
     component: FullComponent,
-    children: [
-        { path: '', redirectTo: '/inicio', pathMatch: 'full' },        
+    children: [        
+        { path: '', redirectTo: '/inicio', pathMatch: 'full' },
         { path: 'inicio', loadChildren: './inicio/inicio.module#InicioModule'},
         { path: 'pedido', loadChildren: './pedido/pedido.module#PedidoModule'},        
         { path: 'dashboard', loadChildren: './dashboards/dashboard.module#DashboardModule' },
@@ -29,7 +30,7 @@ export const routes: Routes = [
 {
     path: '',
     component: BlankComponent,
-    children: [
+    children: [        
         {
             path: 'authentication',
             loadChildren: './authentication/authentication.module#AuthenticationModule'

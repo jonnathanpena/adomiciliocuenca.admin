@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { JsonpModule } from '@angular/http';
 
 import { PedidoRoutes } from './pedido.routing';
 import { IngresadosComponent } from './ingresados/ingresados.component';

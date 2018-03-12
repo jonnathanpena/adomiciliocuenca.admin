@@ -1,11 +1,10 @@
 <div class="card">
     <div class="card-body">
         <h4 class="card-title">Pedidos Ingresados</h4>
-        <h6 class="card-subtitle">Pedidos Tienda Asociada 1</h6> </div>
     <div class="bg-light p-20">
         <div class="d-flex">
             <div class="align-self-center">
-                <h3 class="m-b-0">08 Feb 2018</h3><small>Total de Pedidos</small></div>
+                <h3 class="m-b-0">08 Feb 2018</h3><small>Total de Pedidos 5</small></div>
             <div class="ml-auto align-self-center">
                 <h2 class="text-success">$237</h2></div>
         </div>
@@ -36,7 +35,31 @@
                         <td>$4</td>
                         <td><i class="fa fa-check"></i></td>
                         <td>Moto Propia</td>
-                        <td><button class="btn btn-success" type="button"><i class="fa fa-eye"></i></button></td>
+                        <td>
+                            <!-- ===================== -->
+                            <!-- MODAL -->
+                            <ng-template #content let-c="close" let-d="dismiss">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Pedido 1 - Ingresado </h4>
+                                    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Cliente: </strong> Sunil Joshi</p>
+                                    <p><strong>Fecha: </strong> 8/2/2018 10:34am</p>
+                                    <p><strong>Monto: </strong> $50</p>
+                                    <p><strong>Envío: </strong> $4 - Moto Propia</p>
+                                    <p><strong>Estado: </strong> Despachado</p>
+                                    <p><strong>Sucursal: </strong> Kennedy</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" (click)="c('Close click')">Cerrar</button>
+                                </div>
+                            </ng-template>
+                            <!-- FIN MODAL -->
+                            <button class="btn btn-success" type="button" (click)="open2(content)"><i class="fa fa-eye"></i></button>                                 
+                        </td>
                     </tr>
                     <tr class="active">
                                 <td><span class="round"><img src="assets/images/users/2.jpg" alt="user" width="50"></span></td>
@@ -48,7 +71,7 @@
                                     <td>$6</td>
                                     <td><i class="fa fa-close"></i></td>
                                     <td>APP</td>
-                                    <td><button class="btn btn-success" type="button"><i class="fa fa-eye"></i></button></td>
+                                    <td><button class="btn btn-success" type="button" (click)="open2(content)"><i class="fa fa-eye"></i></button></td>
                             </tr>
                             <tr>
                                 <td><span class="round round-success"><img src="assets/images/users/1.jpg" alt="user" width="50"></span></td>
@@ -60,7 +83,7 @@
                                     <td>$6</td>
                                     <td><i class="fa fa-close"></i></td>
                                     <td>APP</td>
-                                    <td><button class="btn btn-success" type="button"><i class="fa fa-eye"></i></button></td>
+                                    <td><button class="btn btn-success" type="button" (click)="open2(content)"><i class="fa fa-eye"></i></button></td>
                             </tr>
                             <tr>
                                 <td><span class="round round-primary"><img src="assets/images/users/4.jpg" alt="user" width="50"></span></td>
@@ -72,7 +95,7 @@
                                     <td>$4</td>
                                     <td><i class="fa fa-check"></i></td>
                                     <td>Moto Propia</td>
-                                    <td><button class="btn btn-success" type="button"><i class="fa fa-eye"></i></button></td>
+                                    <td><button class="btn btn-success" type="button" (click)="open2(content)"><i class="fa fa-eye"></i></button></td>
                             </tr>
                             
                             <tr>
@@ -85,7 +108,7 @@
                                     <td>$4</td>
                                     <td><i class="fa fa-check"></i></td>
                                     <td>Moto Propia</td>
-                                    <td><button class="btn btn-success" type="button"><i class="fa fa-eye"></i></button></td>
+                                    <td><button class="btn btn-success" type="button" (click)="open2(content)"><i class="fa fa-eye"></i></button></td>
                             </tr>
                             <tr>
                                 <td><span class="round round-success">M</span></td>
@@ -97,10 +120,11 @@
                                     <td>$4</td>
                                     <td><i class="fa fa-check"></i></td>
                                     <td>Moto Propia</td>
-                                    <td><button class="btn btn-success" type="button"><i class="fa fa-eye"></i></button></td>
+                                    <td><button class="btn btn-success" type="button" (click)="open2(content)"><i class="fa fa-eye"></i></button></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </div>
+

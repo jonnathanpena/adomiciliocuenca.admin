@@ -14,6 +14,7 @@ export const routes: Routes = [
         { path: '', redirectTo: '/inicio', pathMatch: 'full' },
         { path: 'inicio', loadChildren: './inicio/inicio.module#InicioModule'},
         { path: 'pedido', loadChildren: './pedido/pedido.module#PedidoModule'},        
+        { path: 'informes', loadChildren: './informes/informes.module#InformeModule'},        
         { path: 'dashboard', loadChildren: './dashboards/dashboard.module#DashboardModule' },
         { path: 'starter', loadChildren: './starter/starter.module#StarterModule' },
         { path: 'component', loadChildren: './component/component.module#ComponentsModule' },

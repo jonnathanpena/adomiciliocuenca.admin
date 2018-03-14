@@ -1,0 +1,65 @@
+<!-- Row Gráfica E indicadores laterales -->
+<div class="row">
+    <div class="col-lg-9 col-xlg-9">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex flex-wrap">
+                    <div>
+                        <h4 class="card-title">Ganancias</h4>
+                        <h6 class="card-subtitle">Ganancias de Ventas</h6>
+                    </div>
+                    <div class="ml-auto align-self-center">
+                        <ul class="list-inline m-b-0">
+                            <li>
+                                <h6 class="text-muted text-success"><i class="fa fa-circle font-10 m-r-10 "></i>APP</h6> </li>
+                            <li>
+                                <h6 class="text-muted text-info"><i class="fa fa-circle font-10 m-r-10"></i>Moto Propia</h6> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="height:300px;">
+                <canvas baseChart height="130" [datasets]="lineChartData2" [labels]="lineChartLabels2" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend2" [chartType]="lineChartType">
+                  </canvas>  
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Total Ganacias</h4>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h4 class="font-medium m-b-0"><i class="ti-angle-up text-success"></i> $ 1256</h4></div>
+                    <div class="ml-auto">
+                        <div id="spark8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Total APP</h4>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h4 class="font-medium m-b-0"><i class="ti-angle-down text-danger"></i> $ 456</h4></div>
+                    <div class="ml-auto">
+                        <div id="spark9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Total Moto Propia</h4>
+                <div class="d-flex">
+                    <div class="align-self-center">
+                        <h4 class="font-medium m-b-0"><i class="ti-angle-up text-success"></i> $ 624</h4></div>
+                    <div class="ml-auto">
+                        <div id="spark10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -2,15 +2,37 @@ import { Component, AfterViewInit } from '@angular/core';
 import {NgbProgressbarConfig } from '@ng-bootstrap/ng-bootstrap';
 import  { ChartsModule } from  'ng2-charts';
 
+import * as Chartist from 'chartist';
+import { ChartType, ChartEvent } from "ng-chartist/dist/chartist.component";
+import * as tableData from './smart-data-table';
+import { LocalDataSource } from 'ng2-smart-table';
+declare var require: any;
+
+const data: any = require('./data.json');
+
+/* export interface Chart {
+  type: ChartType;
+  data: Chartist.IChartistData;
+   options?: any; 
+   responsiveOptions?: any;
+  events?: ChartEvent; 
+}
+ */
+
 @Component({
 	templateUrl: './estadistica.component.html'
 })
-export class EstadisticaComponent {
+export class EstadisticaComponent implements AfterViewInit {
+	subtitle:string;
+    source: LocalDataSource;	
+	constructor() {
+        this.source = new LocalDataSource(tableData.data);
+	}
+    settings2 = tableData.settings;
 	 // This is for the dashboar line chart
     // lineChart
     public lineChartData: Array<any> = [
-        { data: [0, 130, 80, 70, 180, 105, 250], label: 'Site A' },
-        { data: [0, 100, 60, 200, 150, 90, 150], label: 'Site B' }
+        { data: [0, 100, 60, 200, 150, 90, 150], label: 'Comisión' }
     ];
     public lineChartData2: Array<any> = [
         { data: [0, 500, 50, 800, 150, 90, 300, 0], label: 'APP' },
@@ -26,13 +48,13 @@ export class EstadisticaComponent {
         'D'
     ];
     public lineChartLabels: Array<any> = [
-        '2010',
-        '2011',
-        '2012',
-        '2013',
-        '2014',
-        '2015',
-        '2016'
+        'L',
+        'M',
+        'M',
+        'J',
+        'V',
+        'S',
+        'D'
     ];
     public lineChartOptions: any = {
         scales: {

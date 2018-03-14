@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JsonpModule } from '@angular/http';
 import  { ChartsModule } from  'ng2-charts';
+import { ChartistModule} from 'ng-chartist';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
 
 import { InformesRoutes } from './informes.routing';
 import { ComisionesGeneradasComponent } from './comisiones-generadas/comisionesGeneradas.component';
@@ -32,6 +34,8 @@ import { ActivityComponent } from '../dashboards/dashboard-components/activity-t
   imports: [ 
     CommonModule,
     ChartsModule,
+    ChartistModule,
+    Ng2SmartTableModule,
     NgbModule.forRoot(),
     RouterModule.forChild(InformesRoutes)
   ],

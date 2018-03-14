@@ -1,20 +1,20 @@
 export var settings = {
     columns: {
-        id: {
-        title: 'ID',
-        filter: false,
+        pedido: {
+        title: 'Nº Pedido',
+        filter: true,
          
         },
-        name: {
-        title: 'Full Name',
+        comision: {
+        title: 'Comisión ($)',
         filter: true,
         },
-        email: {
-        title: 'Email',
+        cliente: {
+        title: 'Cliente',
         filter: true,
         }
     },
-    edit: {
+    /* edit: {
       editButtonContent: '<i class="ti-pencil text-info m-r-10"></i>',
       saveButtonContent: '<i class="ti-save text-success m-r-10"></i>',
       cancelButtonContent: '<i class="ti-close text-danger"></i>',
@@ -23,29 +23,29 @@ export var settings = {
       deleteButtonContent: '<i class="ti-trash text-danger m-r-10"></i>',
       saveButtonContent: '<i class="ti-save text-success m-r-10"></i>',
       cancelButtonContent: '<i class="ti-close text-danger"></i>',
-    },  
+    }, */  
 };
 export var data = [
     {
-        id: 1,
-        name: 'Leanne Graham',
-        email: 'Sincere@april.biz',
+        pedido: 1,
+        comision: 10,
+        cliente: 'Leanne Graham'
     },
     {
-        id: 2,
-        name: 'Ervin Howell',
-        email: 'Shanna@melissa.tv',
+        pedido: 2,
+        comision: 45,
+        cliente: 'Ervin Howell'
     },
     {
-        id: 3,
-        name: 'Clementine Bauch',
-        email: 'Nathan@yesenia.net',
+        pedido: 3,
+        comision: 5,
+        cliente: 'Clementine Bauch'
     },
     {
-        id: 4,
-        name: 'Patricia Lebsack',
-        email: 'Julianne.OConner@kory.org',
-    },
+        pedido: 4,
+        comision: 22,
+        cliente: 'Patricia Lebsack',
+    }/* ,
     {
         id: 5,
         name: 'Chelsey Dietrich',
@@ -80,7 +80,7 @@ export var data = [
         id: 11,
         name: 'Hitesh patel',
         email: 'Hitesh@annie.ca',
-    }  
+    }   */
     
     
 ];

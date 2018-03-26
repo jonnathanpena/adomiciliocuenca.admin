@@ -1,0 +1,53 @@
+                            <!-- ===================== -->
+                            <!-- MODAL -->
+                            <ng-template #content let-c="close" let-d="dismiss">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Ítem Producto 1</h4>
+                                    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Nombre: </strong> Producto 1</p>
+                                    <p><strong>Precio: </strong> $50</p>
+                                    <p><strong>Categoría: </strong> Categoría 1A</p>
+                                    <p><strong>Subcategoría: </strong> SubA2, SubA4</p>
+                                    <p><strong>Variantes: </strong> Combo 1, Extra Queso</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" (click)="c('Close click')">Cerrar</button>
+                                </div>
+                            </ng-template>
+                            <!-- FIN MODAL -->
+<div class="card">
+<div class="card-body">
+    <h4 class="card-title">Listado Ítems</h4>
+    <h6 class="card-subtitle">Listado de Ítems Tienda 1</h6> </div>
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table table-hover earning-box">
+            <thead>
+                <tr>
+                    <th colspan="2">Nombre</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th>Subcategoría</th>
+                    <th>Variantes</th>
+                    <th></th>
+               </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>13356</td>
+                        <td><h6>Producto 1</h6></td>
+                        <td>$50</td>
+                        <td>Categoría 1A</td>
+                        <td>SubA2, SubA4</td>
+                        <td>Combo 1, Extra Queso</td>
+                        <td><button class="btn btn-success" type="button" (click)="open2(content)"><i class="fa fa-eye"></i></button></td>                        
+                    </tr>                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

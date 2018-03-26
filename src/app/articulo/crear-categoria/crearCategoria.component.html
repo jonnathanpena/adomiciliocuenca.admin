@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Crear Categoría</h4>               
+                <form>
+                    <div>
+                        <div class="form-group">
+                            <label>Nombre</label>
+                            <input id="name" name="name" class="form-control" required minlength="4" forbiddenName="bob">
+                            <!--<div *ngIf="name.invalid && (name.dirty || name.touched)" class="alert alert-danger">
+                                <div *ngIf="name.errors.required"> Name is required. </div>
+                                <div *ngIf="name.errors.minlength"> Name must be at least 4 characters long. </div>
+                                <div *ngIf="name.errors.forbiddenName"> Name cannot be Bob. </div>
+                            </div> -->
+                        </div>
+                        <div class="form-group">
+                            <label>Descripción</label>
+                            <input id="alterEgo" class="form-control" name="alterEgo" > </div>
+                        <div class="form-group">
+                            <label>Subcategoría</label>
+                            <input id="alterEgo" class="form-control" name="alterEgo" > </div>    
+                        <button type="submit" class="btn btn-danger" >Guardar</button>
+                        <button type="button" class="btn btn-inverse" >Cancelar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+                            <!-- ===================== -->
+                            <!-- MODAL -->
+                            <ng-template #content let-c="close" let-d="dismiss">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Detalle Categoría</h4>
+                                    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Categoría: </strong>73473 Categoría 1A</p>
+                                    <p><strong>Descripción: </strong> Categoría para las Alitas de Pollo</p>
+                                    <p><strong>Subcategoría: </strong> SubA2, SubA4</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" (click)="c('Close click')">Cerrar</button>
+                                </div>
+                            </ng-template>
+                            <!-- FIN MODAL -->
+<div class="card">
+<div class="card-body">
+    <h4 class="card-title">Categorías</h4>
+    <h6 class="card-subtitle">Listado de Categorías</h6> </div>
+<div class="card-body">
+    <div class="table-responsive">
+        <table class="table table-hover earning-box">
+            <thead>
+                <tr>
+                    <th colspan="2">Categoría</th>
+                    <th>Descripción</th>
+                    <th>Subcategoría</th>
+                    <th></th>
+               </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td>73473</td>
+                        <td><h6>Categoría 1A</h6></td>
+                        <td>Categoría para las Alitas de Pollo</td>
+                        <td>SubA1, SubA2, SubA3, SubA4</td>
+                        <td><button class="btn btn-success" type="button" (click)="open2(content)"><i class="fa fa-eye"></i></button></td>                        
+                    </tr>                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

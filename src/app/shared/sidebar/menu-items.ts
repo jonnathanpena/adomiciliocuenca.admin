@@ -26,10 +26,10 @@ export const ROUTES: RouteInfo[] = [
     {
         path: '', title: 'Artículos', icon: 'mdi mdi-shopping', class: 'has-arrow', label:'', labelClass: '', extralink: false, 
         submenu: [
-            { path: '/articulos/crear-item', title: 'Crear Ítem', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] },
-            { path: '/articulos/crear-categoria', title: 'Crear Categoría', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] },
-            { path: '/articulos/crear-subcategoria', title: 'Crear Subcategoría', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] },
-            { path: '/articulos/listado-items', title: 'Listado Ítems', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] }                        
+            { path: '/articulo/crear-item', title: 'Crear Ítem', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] },
+            { path: '/articulo/crear-categoria', title: 'Crear Categoría', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] },
+            { path: '/articulo/crear-subcategoria', title: 'Crear Subcategoría', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] },
+            { path: '/articulo/listado-items', title: 'Listado Ítems', icon:'', class: '', label:'', labelClass: '', extralink: false, submenu: [] }                        
         ]
     },
     {

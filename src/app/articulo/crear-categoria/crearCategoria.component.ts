@@ -2,11 +2,11 @@ import { Component, ViewEncapsulation} from '@angular/core';
 import {NgbProgressbarConfig, NgbModal, ModalDismissReasons, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
-  selector: 'ngbd-modal',
-  templateUrl: './comisionesGeneradas.component.html',
-  encapsulation: ViewEncapsulation.None
+	selector: 'ngbd-modal',
+	templateUrl: './crearCategoria.component.html',
+	encapsulation: ViewEncapsulation.None
 })
-export class ComisionesGeneradasComponent{
+export class CrearCategoriaComponent{
 	closeResult: string;
 	
   constructor(private modalService: NgbModal) {} 

@@ -1,0 +1,97 @@
+                            <!-- ===================== -->
+                            <!-- MODAL -->
+                            <ng-template #content let-c="close" let-d="dismiss">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Pedido 1</h4>
+                                        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Cliente: </strong> Sunil Joshi</p>
+                                        <p><strong>Fecha: </strong> 8/2/2018 10:34am</p>
+                                        <p><strong>Monto: </strong> $50</p>
+                                        <p><strong>Envío: </strong> $4 - Moto Propia</p>
+                                        <p><strong>Estado: </strong> Despachado</p>
+                                        <p><strong>Sucursal: </strong> Kennedy</p>
+                                        <p><strong>Calificación: </strong>
+                                            <i class="mdi mdi-star"></i>
+                                            <i class="mdi mdi-star"></i>
+                                            <i class="mdi mdi-star-half"></i>
+                                            <i class="mdi mdi-star-outline"></i>
+                                            <i class="mdi mdi-star-outline"></i>
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" (click)="c('Close click')">Cerrar</button>
+                                    </div>
+                                </ng-template>
+                                <!-- FIN MODAL -->
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Calificaciones</h4>
+        <h6 class="card-subtitle">Calificaciones de acuerdo a las fechas y clientes</h6> </div>
+    <div class="bg-light p-20">
+        <div class="d-flex">
+            <div class="align-self-center">
+                <h3 class="m-b-0">27 Mar 2018</h3><small>Total de Calificaciones</small></div>
+                <div class="ml-auto align-self-center">
+                    <h2 class="text-success">
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star"></i>
+                        <i class="mdi mdi-star-half"></i>
+                        <i class="mdi mdi-star-outline"></i>
+                        <i class="mdi mdi-star-outline"></i>
+                    </h2></div>
+        </div>           
+    </div> 
+    <div class="card-body">
+        <div class="form-group row">
+            <label for="example-date-input" class="col-1 col-form-label">Desde</label>
+            <div class="col-4">
+                <input class="form-control" type="date" value="2011-08-19" id="fecha-desde">
+            </div>
+            <label for="example-date-input" class="col-1 col-form-label">Hasta</label>
+            <div class="col-4">
+                <input class="form-control" type="date" value="2011-08-19" id="fecha-desde">
+            </div>
+            <div class="col-1">
+                <button class="btn btn-success" type="button"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+        <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover earning-box">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Cliente</th>
+                                <th>Pedido</th>
+                                <th>Fecha</th>
+                                <th>Calificación</th>
+                                <th>Envío</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="width:50px;"><span class="round"><img src="assets/images/users/8.jpg" alt="user" width="50"></span></td>
+                                <td>
+                                    <h6>Sunil Joshi</h6></td>
+                                <td>1</td>
+                                <td>8/2/2018 10:34am</td>
+                                <td>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star"></i>
+                                        <i class="mdi mdi-star-half"></i>
+                                        <i class="mdi mdi-star-outline"></i>
+                                        <i class="mdi mdi-star-outline"></i>
+                                </td>                                
+                                <td>Moto Propia</td>
+                                <td><button class="btn btn-success" type="button" (click)="open2(content)"><i class="fa fa-eye"></i></button></td>
+                            </tr>                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>

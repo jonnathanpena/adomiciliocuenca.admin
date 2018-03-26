@@ -12,7 +12,6 @@ import { InicioComponent } from './inicio.component';
 import { IncomeCounterComponent } from '../dashboards/dashboard-components/income-counter/income-counter.component';
 import { ProjectCounterComponent } from '../dashboards/dashboard-components/project-counter/project-counter.component';
 import { ProjectComponent } from '../dashboards/dashboard-components/project/project.component';
-import { RecentcommentComponent } from '../dashboards/dashboard-components/recent-comment/recent-comment.component';
 import { RecentmessageComponent } from '../dashboards/dashboard-components/recent-message/recent-message.component';
 import { SocialSliderComponent } from '../dashboards/dashboard-components/social-slider/social-slider.component';
 import { TodoComponent } from '../dashboards/dashboard-components/to-do/todo.component';
@@ -39,7 +38,6 @@ import { ActivityComponent } from '../dashboards/dashboard-components/activity-t
         IncomeCounterComponent,
         ProjectCounterComponent, 
         ProjectComponent, 
-        RecentcommentComponent,
         RecentmessageComponent, 
         SocialSliderComponent, 
         TodoComponent,

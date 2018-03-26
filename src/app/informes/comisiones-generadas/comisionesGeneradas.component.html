@@ -1,1 +1,146 @@
-hola
+                            <!-- ===================== -->
+                            <!-- MODAL -->
+                            <ng-template #content let-c="close" let-d="dismiss">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Pedido 1</h4>
+                                        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>Cliente: </strong> Sunil Joshi</p>
+                                        <p><strong>Fecha: </strong> 8/2/2018 10:34am</p>
+                                        <p><strong>Monto: </strong> $50</p>
+                                        <p><strong>Envío: </strong> $4 - Moto Propia</p>
+                                        <p><strong>Estado: </strong> Despachado</p>
+                                        <p><strong>Sucursal: </strong> Kennedy</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" (click)="c('Close click')">Cerrar</button>
+                                    </div>
+                                </ng-template>
+                                <!-- FIN MODAL -->
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Comisiones Generadas</h4>
+        <h6 class="card-subtitle">Comisiones de la Tienda Asociada 1</h6> </div>
+    <div class="bg-light p-20">
+        <div class="d-flex">
+            <div class="align-self-center">
+                <h3 class="m-b-0">08 Feb 2018</h3><small>Total de Pedidos 5</small>
+            </div>
+            <div class="ml-auto align-self-center">
+                <h2 class="text-success">$237</h2>
+            </div>
+        </div>           
+    </div> 
+    <div class="card-body">
+        <div class="form-group row">
+            <label for="example-date-input" class="col-1 col-form-label">Desde</label>
+            <div class="col-4">
+                <input class="form-control" type="date" value="2011-08-19" id="fecha-desde">
+            </div>
+            <label for="example-date-input" class="col-1 col-form-label">Hasta</label>
+            <div class="col-4">
+                <input class="form-control" type="date" value="2011-08-19" id="fecha-desde">
+            </div>
+            <div class="col-2">
+                <button class="btn btn-success" type="button"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-hover earning-box">
+                <thead>
+                    <tr>
+                        <th colspan="2">Cliente</th>
+                        <th>Pedido</th>
+                        <th>Fecha</th>
+                        <th>Valor Pedido</th>
+                        <th>Valor de Envío</th>
+                        <th>Confirmación Despacho</th>
+                        <th>Envío</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="width:50px;">
+                            <span class="round">
+                                <img src="assets/images/users/8.jpg" alt="user" width="50">
+                            </span>
+                        </td>
+                        <td>
+                            <h6>Sunil Joshi</h6>
+                        </td>
+                        <td>1</td>
+                        <td>8/2/2018 10:34am</td>
+                        <td>$50</td>
+                        <td>$4</td>
+                        <td><i class="fa fa-check"></i></td>
+                        <td>Moto Propia</td>
+                        <td><button class="btn btn-success" type="button" (click)="open2(content)"><i class="fa fa-eye"></i></button></td>
+                    </tr>
+                    <tr class="active">
+                    <td><span class="round"><img src="assets/images/users/2.jpg" alt="user" width="50"></span></td>
+                    <td><h6>Andrew</h6></td>
+                    <td>2</td>
+                    <td>8/2/2018 10:39am</td>
+                    <td>$74</td>
+                    <td>$6</td>
+                    <td><i class="fa fa-close"></i></td>
+                    <td>APP</td>
+                    <td><button class="btn btn-success" type="button" (click)="open2(content)"><i class="fa fa-eye"></i></button></td>
+                </tr>
+                <tr>
+                    <td><span class="round round-success"><img src="assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                    <td><h6>Bhavesh patel</h6></td>
+                    <td>3</td>
+                    <td>8/2/2018 11:04am</td>
+                    <td>$74</td>
+                    <td>$6</td>
+                    <td><i class="fa fa-close"></i></td>
+                    <td>APP</td>
+                    <td><button class="btn btn-success" type="button"><i class="fa fa-eye"></i></button></td>
+                </tr>
+                <tr>
+                    <td><span class="round round-primary"><img src="assets/images/users/4.jpg" alt="user" width="50"></span></td>
+                    <td><h6>Nirav Joshi</h6></td>
+                    <td>4</td>
+                    <td>8/2/2018 11:21am</td>
+                    <td>$50</td>
+                    <td>$4</td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td>Moto Propia</td>
+                    <td><button class="btn btn-success" type="button"><i class="fa fa-eye"></i></button></td>
+                </tr>
+                <tr>
+                    <td><span class="round round-danger"><img src="assets/images/users/1.jpg" alt="user" width="50"></span></td>
+                    <td><h6>Johnathan</h6></td>
+                    <td>5</td>
+                    <td>8/2/2018 11:25am</td>
+                    <td>$50</td>
+                    <td>$4</td>
+                    <td><i class="fa fa-check"></i></td>
+                    <td>Moto Propia</td>
+                    <td><button class="btn btn-success" type="button"><i class="fa fa-eye"></i></button></td>
+                </tr>
+                <tr>
+                    <td><span class="round round-success">M</span></td>
+                    <td>
+                                    <h6>Vishal Doe</h6></td>
+                                    <td>6</td>
+                                    <td>8/2/2018 11:34am</td>
+                                    <td>$50</td>
+                                    <td>$4</td>
+                                    <td><i class="fa fa-check"></i></td>
+                                    <td>Moto Propia</td>
+                                    <td><button class="btn btn-success" type="button"><i class="fa fa-eye"></i></button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
